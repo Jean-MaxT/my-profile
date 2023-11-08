@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Metal+Mania&display=swap');
+
+/*Background & Fonts*/
+
+body {
+    background-image: url(ressources/background.png);
+    background-attachment: local;
+}
+
+h1 {
+    font-family: 'Metal Mania', serif;
+    font-size: 70px;
+    color: rgb(110, 20, 20);
+    text-align: center;
+    text-shadow: rgba(165, 0, 0, 0.336) 1px 0 10px;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', serif;
+}
+
+p{
+    font-family: 'GFS Neohellenic', sans-serif;
+    font-size: 30px;
+}
+
+.container {
+    width: 750px;
+    margin: 40px auto;
+}
+
+.card-white {
+    background-color: rgb(240, 240, 240);
+    padding: 40px;
+    border-radius: 4px;
+    margin: 20px 0px ;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(165, 0, 0, 0.336);
+}
+
+/*Pictures*/
+
+.profileimg {
+    border-radius: 50% 50% 50% 50% / 27% 27% 73% 73% ;
+    width : 150px;
+    height : 158px;
+    box-shadow: 0px 10px 30px rgba(165, 0, 0, 0.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guitares {
+    border-radius: 4px;
+    transition: transform 0.6s;
+    margin: 0px auto;
+    display: flex;
+}   
+
+.guitares:hover, .logo_hurricane:hover, .logo_michenaud:hover, .logo_woodbrass:hover{
+    transform: translateY(-100px);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/*Buttons*/
+
+.btn-red {
+  background-color: rgb(110, 20, 20);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-family: 'GFS Neohellenic', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo_hurricane {
+    width : 100px;
+    transition: transform 1s;
+}
+
+.logo_michenaud {
+    width : 100px;
+    transition: transform 1s;
+}
+
+.logo_woodbrass {
+    width : 350px;
+    transition: transform 1s;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 0px;
+  margin-inline-end: 15px;
+}
+
+/*Scrollbar*/
+
+body::-webkit-scrollbar {
+    width: 17px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(136, 136, 136); /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(110, 20, 20); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 5px solid rgb(136, 136, 136); /* creates padding around scroll thumb */
+  }
+
+/*Responsive Design*/
+
+  @media (max-width: 960px) {
+    .container {
+      width: 700px;
+    }
+  }
+  @media (max-width: 720px) {
+    .container {
+      width: 500px;
+    }
+  }
+  @media (max-width: 540px) {
+    .container {
+      width: 300px;
+    }
+  }
